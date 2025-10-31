@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aoife Turner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 10px 16px;
+      border-bottom: 1px solid #e0e0e0;
+      position: sticky;
+      top: 0;
+      background-color: #fff;
+    }
+
+    nav .name {
+      font-weight: 700;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #111;
+      border: 1px solid #ddd;
+      padding: 6px 10px;
+      border-radius: 20px;
+      font-size: 14px;
+      transition: background-color 0.2s ease;
+    }
+
+    nav a:hover {
+      background-color: #f2f2f2;
+    }
+
+    main {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 4px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      color: #555;
+      font-size: 16px;
+      margin-top: 4px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      font-size: 17px;
+      color: #444;
+      margin-top: 45px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 4px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    .meta {
+      color: #777;
+      font-size: 13px;
+    }
+
+    .item {
+      margin-bottom: 20px;
+    }
+
+    .item .title {
+      font-weight: 600;
+      font-size: 17px;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    /* only stars for project titles */
+    #projects .item .title::before {
+      content: '★';
+      font-size: 12px;
+      color: #aaa;
+      opacity: 0.6;
+    }
+
+    :root {
+      --link-color: #d3a8e0; /* periwinkle-pink hybrid */
+      --link-hover: #c290d4;
+    }
+
+    .item .title a,
+    a[href*="linkedin"],
+    a[href*="github"] {
+      color: var(--link-color);
+      transition: color 0.25s ease;
+    }
+
+    .item .title a:hover,
+    a[href*="linkedin"]:hover,
+    a[href*="github"]:hover {
+      color: var(--link-hover);
+      text-decoration: underline;
+    }
+
+    .desc {
+      font-size: 14px;
+      margin-top: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <span class="name">Aoife Turner</span>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.linkedin.com/in/aoifewturner" target="_blank">LinkedIn</a>
+    <a href="https://github.com/aoifeturner" target="_blank">GitHub</a>
+  </nav>
+
+  <main>
+    <h1>Aoife Turner</h1>
+    <p class="subtitle">Computer Science @ Columbia University · AI + Product · D1 Soccer</p>
+
+    <h2 id="about">About</h2>
+    <p>I enjoy combining computer science, product thinking, and scientific computing. I like solving hard problems, simplifying them, and turning them into something people actually use.</p>
+
+    <h2 id="experience">Experience</h2>
+    <div class="item">
+      <div class="title">AMD — AI Product Management Intern</div>
+      <div class="meta">San Jose, CA · May–Aug 2025</div>
+      <div class="desc">Worked on open AI projects, validated MI300X workloads, and helped design early model-sharing tools.</div>
+    </div>
+    <div class="item">
+      <div class="title">Onda Sports — AI Intern</div>
+      <div class="meta">Remote · Jul–Sep 2025</div>
+      <div class="desc">Built a Reddit scraping and analysis pipeline to guide product features for surf-intelligence apps.</div>
+    </div>
+    <div class="item">
+      <div class="title">Reliable Robotics — Software Apprentice</div>
+      <div class="meta">Mountain View, CA · Jun–Aug 2023</div>
+      <div class="desc">Created a Python CRC checker to test data integrity across variants and contributed to prototype builds.</div>
+    </div>
+    <div class="item">
+      <div class="title">Make-A-Play × Microsoft — Winter Fellow</div>
+      <div class="meta">Remote · Feb 2025–Present</div>
+      <div class="desc">Selected top 1% college-athlete fellow; led as Scrum Master and advanced to the Microsoft PM round.</div>
+    </div>
+
+    <h2 id="projects">Projects</h2>
+    <div class="item">
+      <div class="title"><a href="https://github.com/aoifeturner/RK4_Planet_Structure_Solver" target="_blank">RK4 Planet Structure Solver</a></div>
+      <div class="desc">Runge–Kutta solver for planetary interiors emphasizing physical accuracy and numerical stability.</div>
+    </div>
+    <div class="item">
+      <div class="title"><a href="https://github.com/aoifeturner/Trading_Strat_ML" target="_blank">ML Trading Strategy Simulator</a></div>
+      <div class="desc">Tests ML-driven trading signals against classic baselines with full backtesting and evaluation tools.</div>
+    </div>
+    <div class="item">
+      <div class="title"><a href="https://github.com/aoifeturner/onda_reddit_scrape" target="_blank">Onda Reddit Scraper</a></div>
+      <div class="desc">Collects and analyzes surf-related Reddit data to improve content-driven insights.</div>
+    </div>
+    <div class="item">
+      <div class="title"><a href="https://github.com/aoifeturner/infinityhub_model_catalog" target="_blank">InfinityHub Model Catalog</a></div>
+      <div class="desc">Lightweight catalog for open model discovery and sharing.</div>
+    </div>
+
+    <h2 id="education">Education</h2>
+    <p><strong>Columbia Engineering</strong> — B.S. Computer Science (GPA 3.87, Class of 2028)</p>
+
+    <h2 id="contact">Contact</h2>
+    <p>Email: aoifewturner [at] gmail [dot] com</p>
+    <p><a href="https://www.linkedin.com/in/aoifewturner" target="_blank">LinkedIn</a> · <a href="https://github.com/aoifeturner" target="_blank">GitHub</a></p>
+  </main>
+</body>
+</html>
